@@ -1,0 +1,43 @@
+version: 2
+updates:
+- package-ecosystem: uv
+  directory: /
+  schedule:
+    interval: cron
+    cronjob: 43 4 * * *
+    timezone: Europe/Warsaw
+  open-pull-requests-limit: 1
+  versioning-strategy: increase-if-necessary
+  allow:
+  - dependency-name: cli2gillm
+    dependency-type: all
+  - dependency-name: costs
+    dependency-type: all
+  - dependency-name: dsl2gillm
+    dependency-type: all
+  - dependency-name: gillm
+    dependency-type: all
+  - dependency-name: goal
+    dependency-type: all
+  - dependency-name: mcp2gillm
+    dependency-type: all
+  - dependency-name: nlp2gillm
+    dependency-type: all
+  - dependency-name: rest2gillm
+    dependency-type: all
+  - dependency-name: uri2gillm
+    dependency-type: all
+  groups:
+    internal-packages:
+      patterns:
+      - cli2gillm
+      - costs
+      - dsl2gillm
+      - gillm
+      - goal
+      - mcp2gillm
+      - nlp2gillm
+      - rest2gillm
+      - uri2gillm
+  commit-message:
+    prefix: "chore(deps)"
