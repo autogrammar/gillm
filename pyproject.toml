@@ -32,7 +32,6 @@ dev = [
     "ruff>=0.4",
     "goal>=2.1.0",
     "costs>=0.1.20",
-    "pfix>=0.1.60",
     "dsl2gillm>=0.1.0",
     "uri2gillm>=0.1.0",
     "nlp2gillm>=0.1.0",
